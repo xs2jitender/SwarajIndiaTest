@@ -14,3 +14,7 @@ Scenario: something
     When I enter www.docker.com
     And I start registration process
     And I close browser
+
+  Scenario: Check if data provider is working
+    Given dataProvider prints users data for ValidNonNri
+    Given dataProvider prints users data for ValidNri
